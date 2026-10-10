@@ -1,0 +1,50 @@
+/* Ondas da Hero */
+
+.custom-shape-divider-bottom-1788142386 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    padding-bottom: 30px;
+}
+
+.custom-shape-divider-bottom-1788142386 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 63px;
+    transform: rotateY(180deg);
+    filter: drop-shadow(0px 10px 8px rgba(0, 0, 0, 0.603));
+}
+
+.custom-shape-divider-bottom-1788142386 .shape-fill {
+    fill: var(--city-at-night);
+}
+
+/* Onda do Sobre */
+
+.custom-shape-divider-top-1787925544 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    padding-top: 30px;
+}
+
+.custom-shape-divider-top-1787925544 svg {
+    position: relative;
+    display: block;
+    width: calc(112% + 1.3px);
+    height: 81px;
+    filter: drop-shadow(0px -10px 8px rgba(0, 0, 0, 0.603));
+}
+
+.custom-shape-divider-top-1787925544 .shape-fill {
+    fill: var(--city-at-night);
+}

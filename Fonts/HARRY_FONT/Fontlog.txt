@@ -1,0 +1,23 @@
+﻿
+FONTLOG for HARRY
+–––––––––––––––––––––––––––––––––––––––––
+This file provides detailed information on the HARRY Font Software. 
+This information should be distributed along with the HARRY fonts and any derivative works.
+
+
+Basic Font Information
+–––––––––––––––––––––––––––––––––––––––––
+HARRY – Displayfont, designed by Lisa Schmidt.
+
+
+ChangeLog
+–––––––––––––––––––––––––––––––––––––––––
+30 October 2012 (Lisa Schmidt) HARRY Version 1.0
+- Initial release of the font HARRY under the SIL OFL 1.1
+
+Acknowledgements
+–––––––––––––––––––––––––––––––––––––––––
+N: Lisa Schmidt
+E: lisa_schm@gmx.de
+W: -
+D: Designer 

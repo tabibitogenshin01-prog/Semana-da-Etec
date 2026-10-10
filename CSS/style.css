@@ -1,0 +1,79 @@
+@import url(./Base.css);
+@import url(./Carousel.css);
+@import url(./Galeria.css);
+@import url(./Hero.css);
+@import url(./Navbar.css);
+@import url(./Cards.css);
+@import url(./Ondas.css);
+@import url(./Sobre.css);
+@import url(./animais.css);
+@import url(./Darkmode.css);
+
+/* =====================
+    FOOTER
+===================== */
+
+.rodape {
+  background: radial-gradient(circle, #479085, var(--blugren-dark));
+  color: var(--darkest-blue);
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+
+  h4 {
+  margin-top: 15px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  color: var(--crescent-moon);
+}
+  p {
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  span {
+    color: var(--crescent-moon);
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+  }
+  a{
+    text-decoration: none;
+  }
+  hr {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+}
+
+#sobre h2,
+#sobre p,
+.rodape p {
+  margin: 0;
+}
+
+/* FADE DA GALERIA */
+.gallery-item {
+  opacity: 0;
+  transform: translateY(25px);
+  transition:
+    opacity 0.7s ease,
+}
+
+.gallery-item.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Sem animação para quem prefere reduzir movimento */
+@media (prefers-reduced-motion: reduce) {
+  .gallery-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+

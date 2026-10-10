@@ -1,0 +1,45 @@
+.carousel {
+  transition: transform 0.3s ease;
+}
+
+.carousel-img {
+  object-fit: cover;
+  overflow: hidden;
+  
+}
+
+.carousel-float {
+  animation: infinite flutuar 3s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.29);
+  transition: 0.3s ease-in-out;
+}
+
+.carousel-float img {
+  transition: 0.2s ease-in-out;
+}
+
+@keyframes flutuar {
+  0%,
+  100% {
+    transform: translateY(0) rotate(2.3deg);
+  }
+
+  50% {
+    transform: translateY(10px) rotate(1.4deg);
+  }
+}
+
+.carousel-caption{
+  text-align: left;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+  padding: 60px 30px 25px;
+  background: linear-gradient(
+        to top,
+        #030303c7 20%,
+        #6fb8e600 100%
+    );
+}
+

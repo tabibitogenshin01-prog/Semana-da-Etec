@@ -1,0 +1,82 @@
+#heropage {
+        background: url(../Imagens/Van+Gogh+Yellow.webp) no-repeat center center fixed ;
+        background-size: 100% 100%;
+        color: var(--default); 
+        font-weight: 600;
+        min-height: 100vh; 
+        overflow-x: hidden;
+        h1 {
+                color: rgb(243, 243, 243);
+                font-size: 80px;
+        font-family: Space Grotesk;
+        line-height: 90px;
+        text-shadow: 0 5px 10px rgba(0, 0, 0, 0.406);
+        
+        }
+        h5 {
+                color: var(--starlight);
+        }
+}
+
+.hero-row {
+        min-height: 60vh;
+}
+    /* Filtro para deixar a imagem escura */
+
+/* #heropage::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.835) 0%, rgba(0, 0, 0, 0.112) 80%);
+} */
+
+.btn-hero:hover {
+        transform: translateY(-5px);
+
+}
+
+.btn-hero{
+        transition: transform 0.3s ease;
+}
+
+
+.bg-transparente{
+        background: rgba(42, 10, 250, 0.039);
+        backdrop-filter: blur(9px);
+        border-top: 1px  rgba(255, 255, 255, 0.3);
+        border-left: 1px rgba(255, 255, 255, 0.2);
+        border-right: 1px transparent;
+        border-bottom: 1px transparent;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.266);
+        border-radius: 20px;
+        transition: backdrop-filter 0.5s ease-in-out;
+
+}
+
+.bg-transparente:hover {
+        border-top: none;
+        border-left: none;
+        border-bottom: 1px  rgba(255, 255, 255, 0.3);
+        border-right: 1px  rgba(255, 255, 255, 0.2);
+}
+
+
+@media (max-width: 992px) {
+        .bg-transparente {
+        background: transparent;
+        border: none;
+        backdrop-filter: none;
+        box-shadow: none;
+}
+        #heropage {
+        background: url(../Imagens/AmareloDesfoque.png) no-repeat center center ;
+        background-size: cover;
+
+        }
+}
+
+/* modo claro: 
+"Uma luz que, na falta de palavra melhor, não posso denominá-la de outro modo, senão amarela."

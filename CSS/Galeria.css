@@ -1,0 +1,206 @@
+#galeria {
+    background: url(../Imagens/BgBlossoms.jpg) fixed;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+    min-height: 110vh;
+        /* background: var(--city-at-night); */
+    h1{
+        color: var(--darkest-blue);
+
+        font-family: Sunridge;
+        font-weight: 400;
+        font-size: clamp(4rem, 7vw, 9rem);
+    }
+    h2{
+        font-size: 24px;
+
+        opacity: 70%;
+        color: rgb(0, 0, 0);
+    }
+}
+
+@media (max-width: 1000px) {
+    #galeria {
+        background-size: cover;
+    }
+}
+
+.card-galeria {
+        background: transparent;
+        color: rgb(255, 255, 255);
+        text-shadow: 4px 4px 5px black;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;
+        border: none;
+}
+
+
+
+#galeria h1  {
+    /* background-image: url(../Imagens/sky.jpeg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    color: azure;
+        filter: drop-shadow(1px 4px 2px rgba(0, 0, 0, 0.722));
+}
+
+
+#galeria h1 span{
+    color: var(--crescent-moon);
+}
+
+
+
+#galeria {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Brilho que acompanha o mouse */
+#galeria::before {
+    content: "";
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    left: var(--mouse-x, 50%);
+    top: var(--mouse-y, 50%);
+
+    transform: translate(-50%, -50%);
+
+    background: radial-gradient(
+        circle,
+        rgba(111, 184, 230, 0.16) 0%,
+        rgba(111, 184, 230, 0.08) 25%,
+        rgba(236, 180, 77, 0.04) 45%,
+        transparent 70%
+    );
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+
+    z-index: 0;
+}
+
+#galeria.mouse-active::before {
+    opacity: 1;
+}
+
+/* Conteúdo da galeria fica acima do brilho */
+#galeria > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/*  ==================================
+    ||         APRESENTACAO         ||
+    ==================================
+ */
+
+#apresentacao {
+    background-color: var(--default);
+    min-height: 70vh;
+    h1 {
+        font-family: Harry-Roman;
+        font-weight: 400;
+        font-size: clamp(4rem, 7vw, 9rem);
+        color: var(--darkest-blue);
+        text-shadow: -6px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    p {
+        font-size: 16px;
+        color: var(--darkest-blue);
+    }
+}
+
+.quadro {
+    width: 20%;
+}
+
+.divisor {
+    height: 68px;
+}
+
+@media (max-width: 1100px) {
+    .quadro{
+        width: 30%;
+    }
+    .theme-Toggle{
+        width: 30%;
+    }
+}
+
+.apresentacao::before {
+    content: "";
+    position: absolute;
+    inset: 25px;
+    border: 1px solid rgba(24, 58, 104, .12);
+    pointer-events: none;
+}
+
+
+.modal-content {
+background: linear-gradient(135deg, #3c7d73 40%, #275761);
+border: 1px solid #fbefcbc4;
+border-radius: 8px;
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+color: #eaeaea;
+font-family: 'Cormorant Garamond', serif;
+    h2 {
+        font-size: 3.2rem;
+        font-family: Playfair Display;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+}
+
+.modal-header,
+.modal-footer {
+    border-color: #FBEFCB;
+}
+
+
+.botao-close {
+    background: var(--default);
+}
+
+.botao-close:hover {
+    background: #e0d4b164;
+    color: #275761;
+}
+
+.modal-title {
+color: var(--default);
+font-size: 2rem;
+text-transform: uppercase;
+letter-spacing: 2px;
+text-align: center;
+}
+
+.modal-content img {
+border-radius: 4px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+border: 0.5px solid var(--default);
+
+}
+
+.btn-close {
+    font-size: 1.5rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z' fill='%23FBEFCB'/%3E%3C/svg%3E");
+}

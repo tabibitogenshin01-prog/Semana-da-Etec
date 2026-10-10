@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+U:wght@100..900&family=Playwrite+DE+SAS+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&display=swap');
+@import url(./Bootstrap/css/);
+
+
+/* Fontes */
+@font-face {
+    font-family: Sunridge;
+    src: url(../Fonts/SunridgeDemo-ARBBD-BF6a7448e06c5cc.otf);
+}
+
+@font-face {
+    font-family: Harry-Roman;
+    src: url(../Fonts/HARRY_FONT/Harry-Roman.otf);
+}
+
+@font-face {
+    font-family: nightsky;
+    src: url(../Fonts/nightsky.ttf);
+}
+
+@font-face {
+    font-family: BYT;
+    src: url(../Fonts/Bright\ Young\ Things.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins;
+}
+
+/* Cores para adicionarmos ao nosso projeto */
+:root {
+    --starlight: #f2e199;
+    --blue-skies: #6fb8e6;
+    --crescent-moon: #ecb44d;
+    --city-at-night: #1b3a68;
+    --darkest-blue: #191939;
+    --default: #fbefcb;
+    --default-dark: #e2d5a9;
+    --default-darkK: #ccbd8a;
+    --blugren: #3c7d73;
+    --blugren-dark: #275761;
+}
+
+#galeria {
+    position: relative;
+    overflow: hidden;
+    background: #061f45;
+}
+
+#galeria::before {
+    content: "";
+    position: absolute;
+
+    top: -120px;
+    left: -5%;
+
+    width: 110%;
+    height: 220px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(27, 58, 104, 0) 0%,
+        rgba(27, 58, 104, 0.08) 20%,
+        rgba(27, 58, 104, 0.35) 45%,
+        rgba(6, 31, 69, 0.8) 75%,
+        #061f45 100%
+    );
+
+    filter: blur(8px);
+
+    pointer-events: none;
+    z-index: 3;
+}

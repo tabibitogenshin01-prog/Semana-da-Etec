@@ -1,0 +1,300 @@
+#animais {
+    min-height: 100vh;
+    background: url(../Imagens/mariposa.jpg) fixed;
+        background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+}
+
+.animais-carrossel {
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    border-bottom: 1.8px solid black;
+    border-right: 1.8px solid black;
+}
+
+.animais-float {
+  animation: infinite flutuaranimais 3s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.29);
+  transition: 0.3s ease-in-out;
+  
+}
+
+@keyframes flutuaranimais {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.a-b {
+    gap: 340px;
+    
+}
+
+.c-d {
+    transform: translateX(320px);
+    gap: 340px;
+}
+
+.a1 {
+    animation-delay: 0s;
+}
+
+.a2 {
+    animation-delay: 1s;
+}
+
+
+/* =========================
+   CONTAINER
+   ========================= */
+
+.theme-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theme-toggle input {
+    display: none;
+}
+
+
+/* =========================
+   BARRA
+   ========================= */
+
+.theme-toggle label {
+    width: min(400px, 90vw);
+    height: 50px;
+
+    background: #F2E8CF;
+    border: 3px solid #6B4F3A;
+    border-radius: 50px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+/* =========================
+   BOLINHA
+   ========================= */
+
+.toggle-circle {
+    width: 38px;
+    height: 38px;
+
+    background: var(--blugren);
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 50%;
+    left: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    transform: translateY(-50%);
+
+    transition:
+        left 0.5s cubic-bezier(.68, -0.55, .27, 1.55),
+        background 0.4s ease;
+}
+
+
+/* =========================
+   ÍCONES
+   ========================= */
+
+.toggle-circle i {
+    position: absolute;
+
+    font-size: 20px;
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================
+   PINCEL
+   ========================= */
+
+.brush-icon {
+    color: aliceblue;
+
+    opacity: 1;
+
+    transform: scale(1);
+}
+
+
+/* =========================
+   PATA
+   ========================= */
+
+.paw-icon {
+    width: 30px;
+    height: 40px;
+
+    object-fit: contain;
+
+    opacity: 0;
+
+    transform: scale(0.5);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================
+   BOTÃO ATIVADO
+   ========================= */
+
+.theme-toggle input:checked + label {
+    background: #F2E8CF;
+    border-color: #6B4F3A;
+}
+
+
+/* =========================
+   MOVE A BOLINHA
+   ========================= */
+
+.theme-toggle input:checked + label .toggle-circle {
+    /*
+       100% = largura interna da barra.
+
+       Subtraímos:
+       - tamanho da bolinha
+       - espaço da borda
+    */
+
+    left: calc(100% - 44px);
+
+    background: #abd4b4;
+}
+
+
+/* =========================
+   ESCONDE PINCEL
+   ========================= */
+
+.theme-toggle input:checked + label .brush-icon {
+    opacity: 0;
+
+    transform:
+        scale(0.5)
+        rotate(-30deg);
+}
+
+
+/* =========================
+   MOSTRA PATA
+   ========================= */
+
+.theme-toggle input:checked + label .paw-icon {
+    opacity: 1;
+
+    transform: scale(1);
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .theme-toggle label {
+        width: 90vw;
+        height: 46px;
+    }
+
+    .toggle-circle {
+        width: 34px;
+        height: 34px;
+
+        left: 3px;
+    }
+
+    .toggle-circle i {
+        font-size: 17px;
+    }
+
+    .paw-icon {
+        width: 25px;
+        height: 32px;
+    }
+
+    .theme-toggle input:checked + label .toggle-circle {
+        left: calc(100% - 40px);
+    }
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+   ========================= */
+
+@media (max-width: 380px) {
+
+    .theme-toggle label {
+        width: 88vw;
+        height: 44px;
+    }
+
+    .toggle-circle {
+        width: 32px;
+        height: 32px;
+    }
+
+    .toggle-circle i {
+        font-size: 16px;
+    }
+
+    .paw-icon {
+        width: 23px;
+        height: 29px;
+    }
+
+    .theme-toggle input:checked + label .toggle-circle {
+        left: calc(100% - 38px);
+    }
+}
+
+
+
+@media (max-width: 1400px) {
+.a-b, .c-d{
+    gap: 200px 0px;
+    transform: translateY(0);
+}
+}

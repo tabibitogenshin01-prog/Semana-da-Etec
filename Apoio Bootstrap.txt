@@ -1,0 +1,140 @@
+site para ondas: https://app.haikei.app/
+
+0px ─────── 575px
+col-12 → 100%
+
+576px ───── 767px
+col-sm-10 → 83,3%
+
+768px ───── 991px
+col-md-8 → 66,6%
+
+992px ───── 1199px
+col-lg-6 → 50%
+
+1200px ──── 1399px
+col-xl-5 → 41,6%
+
+1400px+
+col-xxl-4 → 33,3%
+
+
+1. Alinhar horizontalmente
+
+O principal é o justify-content-*:
+
+<div class="d-flex justify-content-center">
+Classe	Resultado
+justify-content-start	esquerda
+justify-content-center	centro
+justify-content-end	direita
+justify-content-between	extremos, espaço entre
+justify-content-around	espaço ao redor
+justify-content-evenly	espaços iguais
+2. Alinhar verticalmente
+
+Usa align-items-*:
+
+<div class="d-flex align-items-center">
+Classe	Resultado
+align-items-start	topo
+align-items-center	centro
+align-items-end	baixo
+
+Macete:
+
+justify → eixo principal
+align → eixo cruzado
+
+3. Com row e col
+
+Se tens:
+
+<div class="row justify-content-center">
+    <div class="col-7">
+        ...
+    </div>
+</div>
+
+A .col-7 fica centralizada horizontalmente.
+
+Se queres começar na esquerda:
+
+<div class="row justify-content-start">
+
+Direita:
+
+<div class="row justify-content-end">
+4. Uma coisa importante no teu caso
+
+Tu tens:
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col-7 ...">
+
+Se queres a .col-7 encostada à esquerda do container, basta:
+
+<div class="row justify-content-start">
+
+Se quiseres centralizada:
+
+<div class="row justify-content-center">
+
+Se quiseres encostada à direita:
+
+<div class="row justify-content-end">
+
+E se quiseres que ela ocupe, por exemplo, 7 colunas mas comece na coluna 2, podes usar:
+
+<div class="col-7 offset-2">
+5. E o align-self
+
+Quando queres alinhar uma coluna específica, em vez da linha inteira:
+
+<div class="col-7 align-self-center">
+
+Temos:
+
+justify-content → alinha os FILHOS na linha
+align-items     → alinha TODOS os filhos no eixo cruzado
+align-self      → alinha UM filho específico
+
+
+
+
+
+Se quiser alinhar horizontalmente:
+
+<div class="col d-flex justify-content-center">
+    ...
+</div>
+justify-content-start → esquerda
+justify-content-center → centro
+justify-content-end → direita
+
+Se quiser alinhar verticalmente:
+
+<div class="col d-flex align-items-center">
+    ...
+</div>
+align-items-start → topo
+align-items-center → centro
+align-items-end → baixo
+Se quiser centralizar nos dois sentidos:
+<div class="col d-flex justify-content-center align-items-center">
+    ...
+</div>
+
+E, se houver vários elementos um embaixo do outro:
+
+<div class="col d-flex flex-column justify-content-center align-items-center">
+    <h3>Título</h3>
+    <p>Texto...</p>
+</div>
+
+Resumo:
+justify-content = eixo horizontal
+align-items = eixo vertical
+
+(Quando flex-direction é column, os eixos se invertem.)
