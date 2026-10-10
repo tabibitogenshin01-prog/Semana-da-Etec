@@ -15,7 +15,7 @@ const disableDarkmode = () => {
     localStorage.setItem('darkmode', null)
     document.getElementById('textohp').textContent = '"Vejo nele a imagem da morte, no sentido de que a humanidade seria o trigo que ele está ceifando... Mas não há nada de triste na morte, ela segue seu caminho, sob a ampla luz do dia, com o sol inundando tudo, com uma luz de puro ouro. -Vincent Van Gogh, 1889."';
     const imagem = document.getElementById("divisorb");
-    imagem.setAttribute("src", "./Imagens/divisorA.png");
+    imagem.setAttribute("src", "./Imagens/DivisorA.png");
 
 }
 
