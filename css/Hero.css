@@ -1,5 +1,5 @@
 #heropage {
-        background: url(../Imagens/Van+Gogh+Yellow.webp) no-repeat center center fixed ;
+        background: url(../imagens/Van+Gogh+Yellow.webp) no-repeat center center fixed ;
         background-size: 100% 100%;
         color: var(--default); 
         font-weight: 600;
@@ -72,7 +72,7 @@
         box-shadow: none;
 }
         #heropage {
-        background: url(../Imagens/AmareloDesfoque.png) no-repeat center center ;
+        background: url(../imagens/AmareloDesfoque.png) no-repeat center center ;
         background-size: cover;
 
         }

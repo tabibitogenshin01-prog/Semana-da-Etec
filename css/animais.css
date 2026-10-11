@@ -1,6 +1,6 @@
 #animais {
     min-height: 100vh;
-    background: url(../Imagens/mariposa.jpg) fixed;
+    background: url(../imagens/mariposa.jpg) fixed;
         background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; 

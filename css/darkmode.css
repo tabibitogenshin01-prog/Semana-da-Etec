@@ -15,7 +15,7 @@
 
 
 .darkmode #heropage {
-  background: url(../Imagens/Noite\ Estrelada.jpg) no-repeat center center fixed;
+  background: url(../imagens/Noite\ Estrelada.jpg) no-repeat center center fixed;
   background-size: 100% 100%;
   color: var(--starlight);
 }
@@ -49,14 +49,14 @@
 }
 
 .darkmode #galeria {
-  background: url(../Imagens/CaféANoite.jpg) no-repeat center center fixed;
+  background: url(../imagens/CaféANoite.jpg) no-repeat center center fixed;
   background-size: 100% 100%;
 }
 
 @media (max-width: 992px) {
         .darkmode #heropage{
                 background-size: cover;
-                background: url(../Imagens/Noite\ Estrelada\ -\ Editado.jpg) fixed;
+                background: url(../imagens/Noite\ Estrelada\ -\ Editado.jpg) fixed;
                 color: #ffe600;
         }
         .darkmode #galeria{

@@ -1,5 +1,5 @@
 #galeria {
-    background: url(../Imagens/BgBlossoms.jpg) fixed;
+    background: url(../imagens/BgBlossoms.jpg) fixed;
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat; 
@@ -39,7 +39,7 @@
 
 
 #galeria h1  {
-    /* background-image: url(../Imagens/sky.jpeg);
+    /* background-image: url(../imagens/sky.jpeg);
     background-clip: text;
     -webkit-background-clip: text;
     background-repeat: no-repeat;
