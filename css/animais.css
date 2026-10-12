@@ -232,6 +232,23 @@
    ========================= */
 
 @media (max-width: 600px) {
+    
+    #animais {
+        background-attachment: scroll;
+    }
+
+    #galeria {
+        background: url(../imagens/BgBlossoms.jpg);
+        background-attachment: scroll;
+    background-size: auto;
+    background-position: center top;
+    background-repeat: repeat-y;
+    }
+
+    #heropage {
+        background-attachment: scroll;
+    }
+
 
     .theme-toggle label {
         width: 90vw;

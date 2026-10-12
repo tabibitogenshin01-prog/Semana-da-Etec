@@ -32,8 +32,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Mobile Mode</a>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link active" href="#ModalMobile" data-bs-toggle="modal" data-bs-target="#ModalMobile" aria-controls="ModalMobile">Mobile Mode</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#heropage">Imaginar</a>
@@ -61,18 +61,28 @@
   </header>
 
   <main>
-    <!-- Item para a Navbar -->
-
-        <div class="offcanvas offcanvas-end bg-transparente" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  <div class="offcanvas-header">
-    <h4 class="offcanvas-title" id="offcanvasRightLabel">Escaneie aqui para ver no celular também!</h4>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    ...
+  
+        <div class="modal fade" id="ModalMobile" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">QR Code</h1>
+        <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="imagens/qrlight.png" id="qrcode" alt="QR Code" class="rounded-5 img-fluid p-3 w-75 ">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn botao-close" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
   </div>
 </div>
 
+
+
+
+      <!-- Item para a Navbar -->
     <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
 
 
@@ -767,6 +777,7 @@
       
       
     </section>
+
     </div>
   </main>
 
