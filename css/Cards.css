@@ -9,8 +9,8 @@
     color:#6fb8e6;
     transition: all 0.3s ease-in-out;
     border: 0.1px transparent;
-    height: 320px;
-    width: 260px;
+    height: 340px;
+    width: 100%;
     border-radius: 5%;
     overflow: hidden;
     text-align: left;
@@ -76,6 +76,7 @@
 
 .card-destino .card-img-overlay {
     z-index: 2;
+    
 }
 
 #galeria {

@@ -240,10 +240,27 @@
     #galeria {
         background: url(../imagens/BgBlossoms.jpg);
         background-attachment: scroll;
-    background-size: auto;
+    background-size: cover;
     background-position: center top;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     }
+
+    .card-destino {
+    height: 210px;
+    }
+
+    .card-localizacao {
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.card-destino .card-title {
+    font-size: 14px;
+}
+
+.card-link {
+    font-size: 11px;
+}
 
     #heropage {
         background-attachment: scroll;
@@ -282,6 +299,10 @@
    ========================= */
 
 @media (max-width: 380px) {
+
+    #animais {
+        min-height: 55vh;
+    }
 
     .theme-toggle label {
         width: 88vw;
