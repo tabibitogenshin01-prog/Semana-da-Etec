@@ -59,9 +59,11 @@
                 background-size: cover;
                 background: url(../imagens/Noite\ Estrelada\ -\ Editado.jpg) fixed;
                 color: #ffe600;
+                background-attachment: scroll;
         }
         .darkmode #galeria{
           background-size: cover;
+          background-attachment: scroll;
         }
       }
 

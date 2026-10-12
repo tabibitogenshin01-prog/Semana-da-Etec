@@ -236,10 +236,7 @@
     #animais {
         background-attachment: scroll;
     }
-
-    .darkmode #galeria {
-        background-attachment: scroll;
-    }
+    
     #galeria {
         background: url(../imagens/BgBlossoms.jpg);
         background-attachment: scroll;
